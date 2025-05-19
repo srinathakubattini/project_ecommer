@@ -470,32 +470,8 @@ sup{
       font-size: 18px;
       color: grey;
     }
-     /* Hot relases &trendly starts */
-     /* footer_main starts */
-     /* .footer_main{
-      display: flex;
-      background-color: #5ddfb2;
-      align-items: center;
-      padding: 20px 0px;
-      justify-content: space-around;
-     }
-     .sign{
-      color: black;  
-     }
-     .email_input{
-      background-color: white;
-      outline: none;
-      border-radius: 3px;
-      padding: 0px 0px 0px 5px;
-     }
-     .email_button{
-      background-color: black;
-      color: white;
-      border: none;
-      padding: 10px 25px;
-     } */
 
-     .footerHeader {
+.footerHeader {
   background: rgb(116, 219, 193);
   padding: 20px 50px;
   display: flex;
