@@ -753,4 +753,67 @@ sup{
     }
     /* login  ends*/
     /* compare starts */
+    table {
+      width: 100%;
+
+      border-collapse: collapse;
+    }
+
+    th {
+      color: gray;
+      border: 1px solid rgb(230, 230, 230);
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    td {
+      border: 1px solid rgb(230, 230, 230);
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    th img {
+      width: 310px;
+      height: 310px;
+    } 
+    .productName {
+      font-weight: bold;
+      color: rgb(0, 105, 92);
+      font-weight: bold;
+    }
+
+    .colorOptions .color {
+      display: inline-block;
+      gap: 10px;
+    }
+    .color {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+    }
+
+    .red {
+      background-color: red;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .orange {
+      background-color: orange;
+    }
+    .outStock {
+      color: rgb(0, 150, 136);
+    }
+    .cartBtn {
+      background-color: rgb(0, 105, 92);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+/* compare ends */
     
