@@ -1,12 +1,29 @@
    /* homepage starts */
 /* media_queries for laptop 1024px starts*/
-  @media (min-width:768px) and (max-width:1024px) {
+  /* @media (min-width:1024px) and (max-width:1440px) {
+.Home_inp{
+    width: 150px;
+}
+.fa-solid{ */
+    /* position: relative; */
+    /* left: 50px;
+}
+.category_img{
+    width: 180px;
+    border-radius: 10px;
+ }
+ .product-card{
+    width: 300px;
+ }
+  }
+
+  @media (min-width:426px) and (max-width:1024px) {
 .Home_inp{
     width: 100px;
 }
 .fa-solid{
     /* position: relative; */
-    left: 13px;
+    /* left: 13px;
 }
 .category_img{
     width: 140px;
@@ -15,18 +32,17 @@
  .product-card{
     width: 300px;
  }
-  }
+  } */ */
   /* media_queries for laptop 1024px  ends*/
  /* media_queries for laptop 768px starts */
 
-  @media (min-width:425px) and (max-width:768px) {
+  /* @media (min-width:425px) and (max-width:768px) {
     .logo_img{
         width: 120px;
 
     }
     a{
-        /* font-weight: 500;
-         */
+       
          font-size: small;
     }
     
@@ -35,7 +51,7 @@
     width: 70px;
 }
 .fa-solid{
-    /* position: relative; */
+   
     left: 11px;
 }
 .hot_promotion{
@@ -75,5 +91,190 @@ width: 100%;
 .cart_feature1_2{
     flex-wrap: wrap;
 }
-  }
 
+  } */
+
+  /* media_queries for mobiles 425px to 320px starts */
+   /* @media (min-width:320px) and (max-width:425px) {
+.fa-bars{
+  display: block;
+  margin-right: 20px;
+}
+   }
+   a{
+    display: flex  ;
+    flex-direction: column;
+    display: none;
+   }
+   .promotion_content{
+    font-size: 5px;
+   }
+   .pro-img{
+    width: 150px;
+    height: 130px;
+   } */
+
+
+  /* media_queries for mobiles 425px to 320px ends */
+
+
+
+
+
+
+
+
+
+
+  /* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Mobile styles here */
+  .header_main {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .nav_bar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .logo_img {
+      width: 120px;
+  }
+  .wishlist_bars {
+      margin-top: 10px;
+  }
+  .hot_promotion {
+      flex-direction: column;
+      align-items: center;
+  }
+  .carts_popular_categories,
+  .cart_feature1,
+  .cart_feature2,
+  .cart_feature3 {
+      flex-direction: column;
+      align-items: center;
+  }
+  .product-card {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .timing_deals {
+      flex-direction: column;
+      align-items: center;
+  }
+  .deals_1, .deals_2 {
+      width: 100%;
+      padding: 20px;
+  }
+  .categore_main {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Tablet styles here */
+  .header_main {
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+  }
+  .nav_bar {
+      flex-wrap: wrap;
+  }
+  .logo_img {
+      width: 160px;
+  }
+  .carts_popular_categories,
+  .cart_feature1,
+  .cart_feature2,
+  .cart_feature3 {
+      justify-content: space-around;
+  }
+  .product-card {
+      width: 45%;
+      margin-bottom: 20px;
+  }
+  .timing_deals {
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  .deals_1, .deals_2 {
+      width: 48%;
+      padding: 30px;
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Medium desktop styles */
+  .logo_img {
+      width: 180px;
+  }
+  .product-card {
+      width: 30%;
+      margin-bottom: 20px;
+  }
+  .carts_popular_categories,
+  .cart_feature1,
+  .cart_feature2,
+  .cart_feature3 {
+      justify-content: space-between;
+  }
+  .deals_1, .deals_2 {
+      width: 49%;
+      padding: 40px;
+  }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Large desktop */
+  .logo_img {
+      width: 200px;
+  }
+  .product-card {
+      width: 23%;
+      margin-bottom: 20px;
+  }
+  .deals_1, .deals_2 {
+      padding: 50px;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+  /* Extra large desktop */
+  .logo_img {
+      width: 250px;
+  }
+  .product-card {
+      width: 20%;
+      margin-bottom: 20px;
+  }
+}
+
+/* Ultra large devices (1920px and up) */
+@media (min-width: 1920px) and (max-width: 2559.98px) {
+  /* Ultra large desktop */
+  .logo_img {
+      width: 280px;
+  }
+  .product-card {
+      width: 17%;
+      margin-bottom: 20px;
+  }
+}
+
+/* 4K and above (2560px and up) */
+@media (min-width: 2560px) {
+  /* 4K Screens */
+  .logo_img {
+      width: 320px;
+  }
+  .product-card {
+      width: 15%;
+      margin-bottom: 20px;
+  }
+}

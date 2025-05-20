@@ -8,6 +8,9 @@ body{
     align-items: center;
     
 }
+.fa-bars{
+  display: none;
+}
 .logo_img{
     width: 250px;
 }
@@ -21,6 +24,7 @@ a{
     color: black;
     font-weight: bold;
     text-decoration: none;
+    display: block;
 }
 a:hover{
     color: rgb(8, 161, 103);
@@ -30,7 +34,7 @@ a:hover{
     border: 1px solid lightgrey;
     box-shadow: 1px 1px 2px lightgray;
     border-radius: 5px;
-    padding: 10px 20px 10px 5px;
+    padding: 10px 50px 10px 5px;
 
     /* width: 50px; */
     
@@ -484,115 +488,156 @@ sup{
       color: rgb(122, 119, 119);
     }
 
+
 .footerHeader {
-  background: rgb(116, 219, 193);
-  padding: 20px 50px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-top: 50px;
-  height: 100px;
-  width: 100%;
-}
-.footerHeader h2 {
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 0;
-}
+    /* text-align: center; */
+    padding: 20px 30px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(14, 167, 128);
+  }
+  .header_img{
+    width: 25px;
+  }
+  .footerHeader h2 {
+    display: inline-flex;
+    align-items: center;
+    /* gap: 8px; */
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+  }
+  .footerHeader p {
+    margin-top: 8px;
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+    font-weight: bold;
+  }
+    .footerbtn {
+    margin-top: 10px;
+    border: 1px soild lightgray;
+  }
+  .footer_inp {
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+  }
+  .footerbtn button {
+    padding: 11px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  /* Main Footer container */
+  .footer.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    /* background-color: #fff; */
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .ftimg {
+    flex: 1 1 270px;
+  }
+  .ftimg img.ftimg1 {
+    margin-bottom: 10px;
+    max-width: 180px;
+    height: 70px;
+  }
+  /* Footer text with opacity and colors */
+  .footer_text1 {
+    color: rgba(0,0,0,0.5);
+    margin: 6px 0;
+    font-size: 19px;
+  }
+  .footer_text1 strong {
+    color: rgb(80, 77, 77);
+  }
+  /* Social icons container */
+  .social-icons {
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+  .social-icons img {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+  .social-icons img:hover {
+    opacity: 1;
+  }
+  /* Footer address and account sections */
+  .footerAddress {
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerAddress h3 {
+    margin-top: 20px;
+    color: rgb(80, 77, 77);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .footerAddress a {
+    margin-top: 20px;
+    display: block;
+    color: black;
+    /* text-decoration: none; */
+    font-weight: 540;
+    font-size: 15px;
+    /* transition: color 0.3s ease; */
+  }
+  .footerAddress a:hover {
+    color: rgb(7, 158, 113);
+  }
+  /* Footer gateways */
+  .footerGateways {
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footerGateways h3 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(80, 77, 77);
+  }
+  .footerGateways img.visa {
+    margin-top: 10px;
+    max-width: 190px;
+    height: auto;
+  }
+  /* Footer bottom bar */
+  .footer-bottom {
+    margin: 0 85px;
+    border-top: 1px solid rgb(220, 226, 226);
+    padding: 15px 0;
+    background-color: whitesmoke;
+    color: rgb(150, 145, 145);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-bottom span {
+    user-select: none;
+  }
 
-.footerHeader p {
-  font-size: 17px;
-  font-weight: bold;
-}
-.footerHeader input {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0px 0px 5px;
-}
-.footerHeader button {
-  background: black;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0px 5px 5px 0px;
-  position: relative;
-  right: 5px;
-}
-.footerHeader button:hover {
-  background-color: rgb(19, 148, 137);
-  color: white;
-}
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 0px;
-  /* margin: 0px 35px; */
-  background: #fff;
-  font-size: 18px;
-  width: 100%;
-  
-  
-}
-
-.footer h3 {
-  font-size: 19px;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.footer p
-
-{
-  font-size: 19px;
-  color: black;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-}
-.footer a {
-  font-size: 16px;
-  color: black;
-  font-weight: 500;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 10px;
-}
-.footer a:hover {
-  /* transform: translatex(7px); */
-  color: rgb(0, 105, 92);
-  z-index: 100;
-}
-.social-icons {
-  display: flex;
-  gap: 9px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-.social-icons img {
-  width: 18px;
-  height: 18px;
-}
-
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid rgb(220, 226, 226);
-  padding: 15px;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: whitesmoke;
-  color: rgb(150, 145, 145);
-  margin: 0px 85px
-  
-}
-.footerAddress a,
-h3 {
-  margin-top: 20px;
-}
    
 
 /* shop .html starts for Css starts */
@@ -689,6 +734,10 @@ h3 {
       border: 1px solid rgb(226, 223, 223);
       border-radius: 4px;
       padding: 10px;
+    }
+    input{
+      outline: none;
+      border: none;
     }
     .login_submit{
       background-color: rgb(4, 131, 93);
